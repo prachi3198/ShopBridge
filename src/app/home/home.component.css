@@ -1,0 +1,22 @@
+.shopImage{
+    width: 563px;
+    height: 500px;
+    
+    margin-top: 8%;
+
+} 
+.sold{
+    margin-top: 30%;
+    margin-left: 20%;
+    margin-bottom: 20%;
+    font-weight: 900;
+}
+.rightPanel{
+    margin-top: 10%;
+    background: #eadbc7;
+    height: 280px;
+}
+.feed{
+    font-weight: 900;
+    margin-left: 20%; 
+}

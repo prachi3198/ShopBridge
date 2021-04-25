@@ -1,0 +1,39 @@
+.addnew{
+    margin-top: 7%;
+    margin-left: 13%;
+}
+.form-group {
+    margin-top: 5%;
+    margin-bottom: 1rem;
+}
+.submitButton{
+    margin-left: 45%;
+    width: 13%;
+    margin-top: 3%;
+    height: 40px;
+    border-radius: 22px;
+    background: #f7ba49;
+    outline: none;
+    color: white;
+}
+.modalData{
+    border-radius: 22px;
+    width: 56%;
+    margin-left: 16%;
+}
+.addmsg{
+    margin-top: 0%;
+    margin-left: 14%;
+}
+.modal-footer{
+    border:none;
+}
+.okButton{
+    margin-right: 43%;
+    background: #f7ba49;
+    outline: none;
+    color: white;
+}
+.title{
+    color: blue;
+}

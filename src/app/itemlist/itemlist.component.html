@@ -1,0 +1,23 @@
+<input class="searchIn" (input)="search($event)" #searchtext placeholder="Enter product name" type="search">
+<img class="searchImg"src="/assets/search.jpg" >
+<table class="table table-bordered  table-responsive tabdata">
+    <thead class="headBack">
+        <th>Item Id</th>
+        <th>Item Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of itemdata">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.price}}</td>
+            <td> <img class="imgCursor" src="assets/edit.png" (click)="edit(item.id)" > </td>
+            <td> <img class="imgCursor" src="assets/delete.png"(click)="delete(item.id)"> </td>
+        </tr>
+    </tbody>
+
+</table>

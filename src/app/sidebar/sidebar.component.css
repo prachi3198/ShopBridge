@@ -1,0 +1,12 @@
+ul{
+    margin-left: -30%;
+    margin-top: 20%;
+    list-style-type: none;
+}
+li{
+    font-size: 22px;
+    margin-top: 23px;
+}
+a{
+    color: white;
+}

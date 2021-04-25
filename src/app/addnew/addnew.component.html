@@ -1,0 +1,56 @@
+<div class="addnew">
+    <h4 class="title">Add new Item</h4>
+    <form [formGroup]="registerForm">
+        <div class="form-group row">
+            <label class="col-md-2">Product Id:</label>
+            <input type="number" formControlName="id" class="col-md-5 form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.id.errors }" />
+            <div *ngIf="submitted && f.id.errors" class="col-md-3 invalid-feedback">
+                <div *ngIf="f.id.errors.required">Product Id is required</div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-2">Product Name:</label>
+            <input type="text" formControlName="name" class="col-md-5 form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+            <div *ngIf="submitted && f.name.errors" class="col-md-3 invalid-feedback">
+                <div *ngIf="f.name.errors.required">Product Name is required</div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-2">Product Description:</label>
+            <input type="text" formControlName="desc" class="col-md-5 form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.desc.errors }" />
+            <div *ngIf="submitted && f.desc.errors" class="col-md-3 invalid-feedback">
+                <div *ngIf="f.desc.errors.required">Description is required</div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-2">Product Price:</label>
+            <input type="number" formControlName="price" class="col-md-5 form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.price.errors }" />
+            <div *ngIf="submitted && f.price.errors" class="col-md-3 invalid-feedback">
+                <div *ngIf="f.price.errors.required">Price is required</div>
+            </div>
+        </div>
+        <p class="err" *ngIf="exist">Product Id Already Exist</p>
+        <button class="submitButton" (click)="submit()" data-toggle="modal" data-target="#exampleModalCenter">
+            Add Item
+        </button>
+    </form>
+    <div *ngIf="success">
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content modalData">
+                    <div class="modal-body">
+                        <p class="addmsg">Item Added Successfully</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" (click)="refresh()" class="btn okButton">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

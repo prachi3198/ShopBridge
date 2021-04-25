@@ -1,0 +1,29 @@
+.tabdata{
+    margin-left: 12%;
+    width: fit-content;
+    box-shadow: 5px 5px 5px #fbfbfb;
+    margin-top: 3%;
+    
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+.headBack{
+   background-color:  #bba4c5;
+}
+.searchIn{
+    outline: none;
+    margin-top: 7%;
+    margin-left: 12%;
+    width: 20%;
+
+}
+.searchImg{
+    width: 37px;
+    height: 32px;
+    cursor: pointer;
+}
+.imgCursor{
+    cursor: pointer;
+}
